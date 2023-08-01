@@ -56,9 +56,9 @@ const annotations1 = [
     note: {
       label: "Year: 2014, Value: 5528.871",
       title: "Maximum Value",
-      align: "middle",  // try right or left
-      wrap: 200,  // try something smaller to see text split in several lines
-      padding: 10   // More = text lower
+      align: "middle",  
+      wrap: 200,  
+      padding: 10   
     },
     color: ["purple"],
     x: 320,
@@ -72,10 +72,10 @@ const annotations1 = [
 const makeAnnotations = d3.annotation()
   .annotations(annotations1)
 
-
 d3.select("#example1")
   .append("g")
   .call(makeAnnotations)
+
 
 svg.append('g')
   .attr('class', 'y axis')
