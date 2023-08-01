@@ -51,30 +51,6 @@ svg.append('g')
   .attr('transform', `translate(0, ${height})`)
   .call(xAxis);
 
-const annotations1 = [
-  {
-    note: {
-      label: "Year: 2014, Value: 5528.871",
-      title: "Maximum Value",
-      align: "middle",  
-      wrap: 200,  
-      padding: 10   
-    },
-    color: ["purple"],
-    x: 320,
-    y: 220,
-    dy: -120,
-    dx: -180
-  }
-]
-
-// Add annotation to the chart
-const makeAnnotations = d3.annotation()
-  .annotations(annotations1)
-
-d3.select("#example1")
-  .append("g")
-  .call(makeAnnotations)
 
 
 svg.append('g')
